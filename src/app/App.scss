@@ -1,0 +1,133 @@
+@font-face {
+  font-family: 'Nasalization';
+  src: url('./nasalization/nasalization-rg.otf');
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  background-color: black;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: white;
+}
+
+body {
+  margin: 0;
+  background: black;
+}
+
+.fullView {
+  height: 100vh;
+  position: relative;
+}
+
+.fullView {
+
+  &#view1 {
+    background-image: url(/static/header.png);
+  }
+
+  &#view2 {
+    background-image: url(/static/footer.webp);
+  }
+
+  background-size: cover;
+
+  color: white;
+
+  .headerBackground {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.0) 28%, rgba(0, 0, 0, 1));
+    z-index: 0;
+  }
+
+  .view2Background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding-top: 60px;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.0) 28%, rgba(0, 0, 0, 1));
+    z-index: 0;
+  }
+
+  h1 {
+    font-family: 'Nasalization';
+    text-align: center;
+    font-size: 7em;
+    z-index: 1;
+    text-shadow: 0 0 50px rgba(255, 255, 255, 0.3);
+  }
+
+  h2 {
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 4em;
+    z-index: 1;
+    margin-bottom: 300px;
+    text-shadow: 0 0 50px rgba(255, 255, 255, 0.2);
+  }
+
+  h3 {
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 2em;
+    z-index: 1;
+    text-shadow: 0 0 50px rgba(255, 255, 255, 0.2);
+  }
+
+  #mainButton {
+    font-family: 'Nasalization';
+    font-size: 3em;
+    background: #a20000;
+    width: fit-content;
+    margin-bottom: 60px;
+    padding: 10px 20px;
+    cursor: pointer;
+    box-shadow: 0 0 10px opacify($color: #a20000, $amount: 0.5);
+    transition: .2s;
+
+    a {
+      text-decoration: none;
+      color: white;
+    }
+
+    &:hover {
+      transform: perspective(1000px) rotateX(20deg) scale(1.1);
+      box-shadow: 0 0 50px opacify($color: #a20000, $amount: 0.5);
+    }
+  }
+
+  .downArrow,
+  .topArrow {
+    width: fit-content;
+    font-family: serif;
+    font-size: 5em;
+    font-weight: bolder;
+    cursor: pointer;
+    color: white;
+    animation: bounce 2s infinite ease-in-out;
+  }
+}
+
+
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
