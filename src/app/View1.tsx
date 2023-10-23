@@ -13,14 +13,14 @@ export const View1 = ({ }: View1Props) => {
                 <h1>CosmosJourneyer</h1>
                 <h2>Explore the endless</h2>
 
-                <center><div id="mainButton"><a href="https://cosmosjourneyer.com" target='_blank'>Journey on!</a></div></center>
+                <center><div id="mainButton"><a href="https://barthpaleologue.github.io/CosmosJourneyer/dist/" target='_blank'>Journey on!</a></div></center>
 
-                <center><div className="downArrow" onClick={() => {
+                {/*<center><div className="downArrow" onClick={() => {
                     window.scrollTo({
                         top: window.innerHeight,
                         behavior: 'smooth'
                     }); 
-                }}>˅</div></center>
+                }}>˅</div></center>*/}
             </div>
         </div>
     );

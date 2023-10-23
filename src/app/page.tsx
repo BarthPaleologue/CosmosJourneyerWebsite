@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <main className='App'>
       <View1 />
-      <View2 />
+      {/*<View2 />*/}
     </main>
   )
 }
