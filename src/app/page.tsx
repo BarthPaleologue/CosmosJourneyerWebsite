@@ -7,6 +7,8 @@ export default function Home() {
   let i = 0;
   return (
     <main className='App'>
+      <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js' />
+      
       <View1 />
       {/*<View2 />*/}
     </main>

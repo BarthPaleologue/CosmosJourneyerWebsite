@@ -7,6 +7,15 @@ export interface View1Props {
 }
 
 export const View1 = ({ }: View1Props) => {
+    const kofi =
+        `<script>
+  kofiWidgetOverlay.draw('cosmosjourneyer', {
+    'type': 'floating-chat',
+    'floating-chat.donateButton.text': 'Support me!',
+    'floating-chat.donateButton.background-color': '#ffffff',
+    'floating-chat.donateButton.text-color': '#323842'
+  });
+</script>`
     return (
         <div className="fullView" id="view1">
             <div className="headerBackground">
@@ -21,6 +30,8 @@ export const View1 = ({ }: View1Props) => {
                         behavior: 'smooth'
                     }); 
                 }}>˅</div></center>*/}
+
+                <div dangerouslySetInnerHTML={{ __html: kofi }} />
             </div>
         </div>
     );
