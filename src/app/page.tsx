@@ -21,7 +21,7 @@ kofiWidgetOverlay.draw('cosmosjourneyer', {
       <div dangerouslySetInnerHTML={{ __html: kofi }} />
       
       <View1 />
-      {/*<View2 />*/}
+      <View2 />
     </main>
   )
 }

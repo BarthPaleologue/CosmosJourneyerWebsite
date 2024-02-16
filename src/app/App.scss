@@ -24,20 +24,38 @@ body {
   background-position: center;
 }
 
+@import "animatedText.scss";
+
+@import "about.scss";
+
 .fullView {
 
   &#view1 {
-    background-image: url(/static/header.webp);
+    background-image: url(/static/header4.png);
     background-position: right;
   }
 
   &#view2 {
-    background-image: url(/static/footer.webp);
+    background-image: url(/static/footer2.png);
   }
 
   background-size: cover;
 
   color: white;
+
+  a {
+    color: white;
+    text-decoration: 2px underline rgba(255, 255, 255, 0.7);
+    transition: .2s;
+
+    &:hover {
+      text-decoration: 2px underline rgba(255, 255, 255, 1.0);
+    }
+
+    &:visited {
+      color: white;
+    }
+  }
 
   .headerBackground {
     display: flex;
@@ -48,7 +66,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.0) 28%, rgba(0, 0, 0, 1));
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.0) 25%, rgba(0, 0, 0, 1));
     z-index: 0;
   }
 
@@ -58,8 +76,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    padding-top: 60px;
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.0) 28%, rgba(0, 0, 0, 1));
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.0) 75%, rgba(0, 0, 0, 1));
     z-index: 0;
   }
 
@@ -71,7 +88,7 @@ body {
     font-size: 6vw;
 
     @media screen and (max-width: 1100px) {
-      font-size: 9vw;
+      font-size: 15vw;
       margin-block: 0;
     }
   }
@@ -91,7 +108,7 @@ body {
   }
 
   h3 {
-    font-family: sans-serif;
+    font-family: 'Nasalization';
     text-align: center;
     font-size: 2em;
     z-index: 1;
@@ -101,12 +118,12 @@ body {
   #mainButton {
     font-family: 'Nasalization';
     font-size: 3em;
-    background: #a20000;
+    background: #002b6a;
     width: fit-content;
     margin-bottom: 60px;
     padding: 10px 20px;
     cursor: pointer;
-    box-shadow: 0 0 10px opacify($color: #a20000, $amount: 0.5);
+    box-shadow: 0 0 10px opacify($color: #002b6a, $amount: 0.5);
     transition: .2s;
 
     a {
@@ -116,7 +133,11 @@ body {
 
     &:hover {
       transform: perspective(1000px) rotateX(20deg) scale(1.1);
-      box-shadow: 0 0 50px opacify($color: #a20000, $amount: 0.5);
+      box-shadow: 0 0 50px opacify($color: #002b6a, $amount: 0.5);
+    }
+
+    @media screen and (max-width: 1100px) {
+      font-size: 2em;
     }
   }
 
@@ -129,6 +150,10 @@ body {
     cursor: pointer;
     color: white;
     animation: bounce 2s infinite ease-in-out;
+  }
+
+  .topArrow {
+    margin-top: 30px;
   }
 }
 

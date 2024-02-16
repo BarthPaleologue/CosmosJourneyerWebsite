@@ -21,9 +21,37 @@ export const View2 = ({ }: View2Props) => {
                         behavior: 'smooth'
                     });
                 }}>˄</div></center>
-                <h3>Experience it right in your web browser, no install needed!</h3>
 
-                <div id="contributors">
+                <div id="shared-loader">
+                    <div className="cube">
+                        <div className="cube-face cube-face-front">Free Forever</div>
+                        <div className="cube-face cube-face-back">Infinite</div>
+                        <div className="cube-face cube-face-top">Open-source</div>
+                        <div className="cube-face cube-face-bottom">Labor of Love</div>
+                    </div>
+                </div>
+
+                <div id="about">
+                    <h2>FAQ:</h2>
+
+                    <h3>What is Cosmos Journeyer?</h3>
+                    <p>Cosmos Journeyer is a free, open-source project in development since 2021. It is my labor of love, and will always be free for everyone to use and modify to their liking.</p>
+
+                    <h3>How to contribute?</h3>
+                    <p>Anyone can contribute to Cosmos Journeyer. If you know how to code, <a target="_blank" href="https://github.com/BarthPaleologue/CosmosJourneyer">the github repository</a> is where all the development takes place.</p>
+
+                    <p>You also can help the project grow by sponsoring my work on <a target="_blank" href="https://ko-fi.com/cosmosjourneyer">Patreon</a> and <a target="_blank" href="https://ko-fi.com/cosmosjourneyer">Ko-fi</a>.</p>
+
+                    <h3>Get in touch</h3>
+
+                    <p>If you have any questions, or just want to say hi, you can reach me by <a href="mailto:barth.paleologue@cosmosjourneyer.com">email</a></p>
+                </div>
+
+                <footer>
+
+                </footer>
+
+                {/*<div id="contributors">
                     <h4>Contributors:</h4>
                     <div id="contributorsList">
 
@@ -41,7 +69,7 @@ export const View2 = ({ }: View2Props) => {
                     <div id="supportList">
                         <h5>Support Financially</h5>
                     </div>
-                </div>
+            </div>*/}
 
             </div>
         </div>
