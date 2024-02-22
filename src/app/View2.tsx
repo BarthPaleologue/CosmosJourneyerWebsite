@@ -17,7 +17,7 @@ export const View2 = ({ }: View2Props) => {
             <div className="view2Background">
                 <center><div className="topArrow" onClick={() => {
                     window.scrollTo({
-                        top: 0,
+                        top: window.innerHeight,
                         behavior: 'smooth'
                     });
                 }}>˄</div></center>

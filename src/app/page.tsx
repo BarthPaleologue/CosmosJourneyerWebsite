@@ -2,6 +2,7 @@ import './App.scss';
 
 import { View1 } from './View1'
 import { View2 } from './View2';
+import { ViewRoadmap } from './ViewRoadmap';
 
 export default function Home() {
   let i = 0;
@@ -21,6 +22,7 @@ kofiWidgetOverlay.draw('cosmosjourneyer', {
       <div dangerouslySetInnerHTML={{ __html: kofi }} />
       
       <View1 />
+      <ViewRoadmap />
       <View2 />
     </main>
   )
