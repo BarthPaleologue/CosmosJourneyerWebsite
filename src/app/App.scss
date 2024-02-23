@@ -6,7 +6,7 @@
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
-  background-color: black;
+  background-color: rgb(61, 61, 61);
 }
 
 ::-webkit-scrollbar-thumb {
@@ -86,7 +86,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.0) 75%, rgba(0, 0, 0, 1));
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.0) 50%, rgba(0, 0, 0, 1));
     z-index: 0;
   }
 
@@ -169,11 +169,15 @@ body {
     font-weight: bolder;
     cursor: pointer;
     color: white;
-    animation: bounce 2s infinite ease-in-out;
   }
 
   .topArrow {
-    margin-top: 30px;
+    animation-delay: 1s;
+    animation: bounce2 2s infinite ease-in-out;
+  }
+
+  .downArrow {
+    animation: bounce 2s infinite ease-in-out;
   }
 }
 
@@ -186,6 +190,20 @@ body {
 
   50% {
     transform: translateY(-20px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounce2 {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(20px);
   }
 
   100% {

@@ -25,8 +25,8 @@ export const View2 = ({ }: View2Props) => {
                 <div id="shared-loader">
                     <div className="cube">
                         <div className="cube-face cube-face-front">Free Forever</div>
-                        <div className="cube-face cube-face-back">Infinite</div>
-                        <div className="cube-face cube-face-top">Open-source</div>
+                        <div className="cube-face cube-face-back">Curiosity Driven</div>
+                        <div className="cube-face cube-face-top">Open Source</div>
                         <div className="cube-face cube-face-bottom">Labor of Love</div>
                     </div>
                 </div>
@@ -35,7 +35,8 @@ export const View2 = ({ }: View2Props) => {
                     <h2>FAQ:</h2>
 
                     <h3>What is Cosmos Journeyer?</h3>
-                    <p>Cosmos Journeyer is a free, open-source project in development since 2021. It is my labor of love, and will always be free for everyone to use and modify to their liking.</p>
+                    <p>Cosmos Journeyer is a free, open-source exploration driven game I started working on in 2021 in my free time.
+                        It is my labor of love, and will always be free for everyone to use and modify to their liking.</p>
 
                     <h3>How to contribute?</h3>
                     <p>Anyone can contribute to Cosmos Journeyer. If you know how to code, <a target="_blank" href="https://github.com/BarthPaleologue/CosmosJourneyer">the github repository</a> is where all the development takes place.</p>
