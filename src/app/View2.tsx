@@ -41,7 +41,7 @@ export const View2 = ({ }: View2Props) => {
                     <h3>How to contribute?</h3>
                     <p>Anyone can contribute to Cosmos Journeyer. If you know how to code, <a target="_blank" href="https://github.com/BarthPaleologue/CosmosJourneyer">the github repository</a> is where all the development takes place.</p>
 
-                    <p>You also can help the project grow by sponsoring my work on <a target="_blank" href="https://ko-fi.com/cosmosjourneyer">Patreon</a> and <a target="_blank" href="https://ko-fi.com/cosmosjourneyer">Ko-fi</a>.</p>
+                    <p>You also can help the project grow by sponsoring my work on <a target="_blank" href="https://www.patreon.com/barthpaleologue">Patreon</a> and <a target="_blank" href="https://ko-fi.com/cosmosjourneyer">Ko-fi</a>.</p>
 
                     <h3>Get in touch</h3>
 
