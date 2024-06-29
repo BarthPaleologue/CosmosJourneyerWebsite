@@ -40,32 +40,17 @@ export const ViewRoadmap = ({ }: ViewRoadmapProps) => {
 
                             <Image className='roadmapImage' src={spaceStationImage} alt='space station' width={480} />
 
-                            <p>The next step for Cosmos Journeyer is to create human space and surface settlements that would give purpose to the player&apos;s journey.</p>
+                            <p>The first gameplay iteration of Cosmos Journeyer will heavily rely on space stations: they are the places where humanity has settled among the stars. Space stations are the basis for an economic system that will unlock trading among and between systems.</p>
 
-                            <h4>Docking</h4>
+                            <p>The stations are designed procedurally, following the laws of physics. The spinning habitats rotate as fast as need to generate an acceleration of 1g for the inhabitants. Moreover the habitat surface is calculated with considerations regarding the population density and the local agricultural system. The solar panel area is also determined by the real energy consumption of the station.</p>
 
-                            <p>Players will be assigned a landing pad on docking request. To account for multiple types of player, the landing can be manual or automatic, which can be toggle using a button.</p>
-
-                            <h4>Features</h4>
-
-                            <p>Once docked, players will be able to refuel their spaceship after paying a small fee. Money can be obtained by performing mission for the station: exploration or trading. As some systems won&apos;t have any settlement, it will also be possible to refuel around cold stars and gas giants.</p>
-
-                            <h4>Exploration</h4>
-
-                            <p>Cosmos Journeyer is all about exploration, but it doesn&apos;t mean that players should not be given a direction.
-                                Exploration missions will involve taking pictures of interesting celestial bodies inside the solar system or in nearby solar systems.
-                                Players will also be tasked with transporting people to see specific places. People will include scientists and tourists.
-                            </p>
-
-                            <h4>Trading</h4>
-
-                            <p>In the first iteration, trading will only take place inside a single star system, expading to interstellar trading in a later version. Implementing trading will create an economic system for the galaxy with goods that can change price depending on the system. I don&apos;t want all settlements to be simply capitalist, there will be some diversity in that regard, which will change the possible interactions with the settlement.</p>
+                            <p>You can learn more about the design of stations in the devlogs <a href="https://barthpaleologue.github.io/Blog//tags/space-station/">here</a></p>
 
                         </div>
                     </div>
 
                     <div className='roadmapItem'>
-                        <h3>Exploration missions</h3>
+                        <h3>Exploration content</h3>
 
                         <p className='roadmapEta'>Cosmos Journeyer 1.9 - August 2024</p>
 
@@ -73,27 +58,15 @@ export const ViewRoadmap = ({ }: ViewRoadmapProps) => {
 
                             <Image className='roadmapImage' src={explorationImage} alt='space station' width={480} />
 
-                            <p>The next step for Cosmos Journeyer is to create human space and surface settlements that would give purpose to the player&apos;s journey.</p>
+                            <p>Stemming from space stations, exploration content will debut in Cosmos Journeyer 1.9. As the universe is immense, it can be difficult to find the most interesting places.</p>
 
-                            <h4>Docking</h4>
+                            <h4>New places to explore</h4>
 
-                            <p>Players will be assigned a landing pad on docking request. To account for multiple types of player, the landing can be manual or automatic, which can be toggle using a button.</p>
+                            <p>Many solar systems will be populated with strange objects called "anomalies". These objects challenge the law of physics and will give players a spectacle they will not forget any time soon. In addition to that, a small subset of stars will become "strange stars", bathing their worlds in their weird light, never seen before. Asteroid fields are also coming, offering an interesting challenge for pilots as well as new views for photographs!</p>
 
-                            <h4>Features</h4>
+                            <h4>Missions</h4>
 
-                            <p>Once docked, players will be able to refuel their spaceship after paying a small fee. Money can be obtained by performing mission for the station: exploration or trading. As some systems won&apos;t have any settlement, it will also be possible to refuel around cold stars and gas giants.</p>
-
-                            <h4>Exploration</h4>
-
-                            <p>Cosmos Journeyer is all about exploration, but it doesn&apos;t mean that players should not be given a direction.
-                                Exploration missions will involve taking pictures of interesting celestial bodies inside the solar system or in nearby solar systems.
-                                Players will also be tasked with transporting people to see specific places. People will include scientists and tourists.
-                            </p>
-
-                            <h4>Trading</h4>
-
-                            <p>In the first iteration, trading will only take place inside a single star system, expading to interstellar trading in a later version. Implementing trading will create an economic system for the galaxy with goods that can change price depending on the system. I don&apos;t want all settlements to be simply capitalist, there will be some diversity in that regard, which will change the possible interactions with the settlement.</p>
-
+                            <p>To facilitate the journey of the players, tourists from space stations will create missions to bring them to these new interesting places. You will have to travel many light years to reach your destination, encountering more content on the way.</p>
                         </div>
                     </div>
 
@@ -106,26 +79,9 @@ export const ViewRoadmap = ({ }: ViewRoadmapProps) => {
 
                             <Image className='roadmapImage' src={tradingImage} alt='space station' width={480} />
 
-                            <p>The next step for Cosmos Journeyer is to create human space and surface settlements that would give purpose to the player&apos;s journey.</p>
+                            <p>As space stations are designed from the ground up with agricultural production data, trading will emerge naturally. The price of goods at each station will depend on the local supply, which will be different at each station. This naturally creates trade roads between stations for players to earn money.</p>
 
-                            <h4>Docking</h4>
-
-                            <p>Players will be assigned a landing pad on docking request. To account for multiple types of player, the landing can be manual or automatic, which can be toggle using a button.</p>
-
-                            <h4>Features</h4>
-
-                            <p>Once docked, players will be able to refuel their spaceship after paying a small fee. Money can be obtained by performing mission for the station: exploration or trading. As some systems won&apos;t have any settlement, it will also be possible to refuel around cold stars and gas giants.</p>
-
-                            <h4>Exploration</h4>
-
-                            <p>Cosmos Journeyer is all about exploration, but it doesn&apos;t mean that players should not be given a direction.
-                                Exploration missions will involve taking pictures of interesting celestial bodies inside the solar system or in nearby solar systems.
-                                Players will also be tasked with transporting people to see specific places. People will include scientists and tourists.
-                            </p>
-
-                            <h4>Trading</h4>
-
-                            <p>In the first iteration, trading will only take place inside a single star system, expading to interstellar trading in a later version. Implementing trading will create an economic system for the galaxy with goods that can change price depending on the system. I don&apos;t want all settlements to be simply capitalist, there will be some diversity in that regard, which will change the possible interactions with the settlement.</p>
+                            <p>In addition to this free form of trading, missions will be available at stations to guide players in their journey.</p>
 
                         </div>
                     </div>
@@ -147,7 +103,7 @@ export const ViewRoadmap = ({ }: ViewRoadmapProps) => {
                                 When opening the airlock to the outside, the volume of sound would change depending on the current air pressure (no sound in space!).
                             </p>
 
-                            <p>At first, ship interiors will be quite minimalist, but I hope to expand it little by little and also include a cockpit view to pilot the spaceship.</p>
+                            <p>Ship interiors will also come first first person piloting of spaceships, giving a more immersive and enjoyable way of exploring the galaxy.</p>
 
                         </div>
 
@@ -163,15 +119,7 @@ export const ViewRoadmap = ({ }: ViewRoadmapProps) => {
 
                             <Image className='roadmapImage' src={terrainImage} alt='space ship' width={480} />
 
-                            <p>Stepping for the first time on an alien world should be an impactful moment. Some would say an &ldquo;Armstrong moment&rdquo; in reference to the 1969 Moon landing.</p>
-                                
-                            <p> In order to recreate this incredible experience, I want players to be able to transition from commanding the spaceship to walking in a very smooth way, instead of using teleportation.
-                                Players will have to go through their ship airlock, and equalize the pressure before being able to step outside.
-                                When opening the airlock to the outside, the volume of sound would change depending on the current air pressure (no sound in space!).
-                            </p>
-
-                            <p>At first, ship interiors will be quite minimalist, but I hope to expand it little by little and also include a cockpit view to pilot the spaceship.</p>
-
+                            <p>Taking advantage of WebGPU compute shaders, the terrain of planets will become more complex and varied depending on the planet type. Not only that, but the objects scattered on the terrain will be placed more naturally (no grass on ice) with new variations as well. I would love to also introduce a vehicle for ground exploration.</p>
                         </div>
 
                     </div>
