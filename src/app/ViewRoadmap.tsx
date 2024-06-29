@@ -20,12 +20,12 @@ export const ViewRoadmap = ({ }: ViewRoadmapProps) => {
         <div className="fullView" id="viewRoadmap">
             <div className="headerRoadmap">
 
-                <center><div className="topArrow" onClick={() => {
+                <div className="topArrow" onClick={() => {
                     window.scrollTo({
                         top: 0,
                         behavior: 'smooth'
                     });
-                }}>˄</div></center>
+                }}></div>
 
                 <h2>Roadmap</h2>
 
@@ -62,7 +62,7 @@ export const ViewRoadmap = ({ }: ViewRoadmapProps) => {
 
                             <h4>New places to explore</h4>
 
-                            <p>Many solar systems will be populated with strange objects called "anomalies". These objects challenge the law of physics and will give players a spectacle they will not forget any time soon. In addition to that, a small subset of stars will become "strange stars", bathing their worlds in their weird light, never seen before. Asteroid fields are also coming, offering an interesting challenge for pilots as well as new views for photographs!</p>
+                            <p>Many solar systems will be populated with strange objects called &ldquo;anomalies&ldquo;. These objects challenge the law of physics and will give players a spectacle they will not forget any time soon. In addition to that, a small subset of stars will become &ldquo;strange stars&ldquo;, bathing their worlds in their weird light, never seen before. Asteroid fields are also coming, offering an interesting challenge for pilots as well as new views for photographs!</p>
 
                             <h4>Missions</h4>
 
@@ -146,12 +146,12 @@ export const ViewRoadmap = ({ }: ViewRoadmapProps) => {
                 </div>
 
 
-                <center><div className="downArrow" onClick={() => {
+                <div className="downArrow" onClick={() => {
                     window.scrollTo({
                         top: window.innerHeight * 2,
                         behavior: 'smooth'
                     });
-                }}>˅</div></center>
+                }}></div>
             </div>
         </div>
     );

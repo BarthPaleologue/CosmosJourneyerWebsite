@@ -15,12 +15,12 @@ export const View2 = ({ }: View2Props) => {
     return (
         <div className="fullView" id="view2">
             <div className="view2Background">
-                <center><div className="topArrow" onClick={() => {
+                <div className="topArrow" onClick={() => {
                     window.scrollTo({
                         top: window.innerHeight,
                         behavior: 'smooth'
                     });
-                }}>˄</div></center>
+                }}></div>
 
                 <div id="shared-loader">
                     <div className="cube">
