@@ -1,4 +1,4 @@
-# CosmosJourneyerWebsite
+# Cosmos Journeyer Website
 
 The main repository for the [Cosmos Journeyer](https://github.com/BarthPaleologue/CosmosJourneyer) website.
 
