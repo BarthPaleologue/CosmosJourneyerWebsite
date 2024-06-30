@@ -153,7 +153,13 @@ body {
       a {
         text-decoration: none;
         color: white;
-        padding: 10px 20px;
+        padding: 15px;
+
+        $tileSize: 30px;
+
+        width: $tileSize;
+        height: $tileSize;
+
         background: #002b6a;
 
         font-family: 'Nasalization';
@@ -161,9 +167,6 @@ body {
         width: fit-content;
         box-shadow: 0 0 10px opacify($color: #002b6a, $amount: 0.5);
         transition: .2s;
-        height: 50px;
-        line-height: 50px;
-        min-width: 50px;
 
         &#redditButton {
           background: #FF4500;
@@ -211,7 +214,8 @@ body {
         }
 
         img {
-          height: 50px;
+          width: $tileSize;
+          height: $tileSize;
         }
 
         &:hover {
