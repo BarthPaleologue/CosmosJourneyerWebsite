@@ -20,7 +20,7 @@ import Head from 'next/head'
 
 export const metadata: Metadata = {
   title: 'Cosmos Journeyer',
-  description: 'Journey through the cosmos on a web page. Cosmos Journeyer is a free, open-source project that lets you explore the universe in your browser',
+  description: 'Cosmos Journeyer is a free and open-source space exploration game that lets you discover the wonders of the universe.',
   applicationName: 'Cosmos Journeyer',
   robots: 'index,follow',
 }

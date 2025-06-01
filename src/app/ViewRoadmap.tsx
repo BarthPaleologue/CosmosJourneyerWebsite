@@ -51,7 +51,7 @@ export const ViewRoadmap = ({ }: ViewRoadmapProps) => {
                     <div className='roadmapItem'>
                         <h3>Space stations</h3>
 
-                        <p className='roadmapEta'>Cosmos Journeyer 1.9 - August 2024</p>
+                        <p className='roadmapEta'>Shipped in Cosmos Journeyer 1.9 - April 2025</p>
 
                         <div className='roadmapItemContent'>
 
@@ -69,7 +69,7 @@ export const ViewRoadmap = ({ }: ViewRoadmapProps) => {
                     <div className='roadmapItem'>
                         <h3>Exploration content</h3>
 
-                        <p className='roadmapEta'>Cosmos Journeyer 1.9 - August 2024</p>
+                        <p className='roadmapEta'>Shipped in Cosmos Journeyer 1.9 - April 2025</p>
 
                         <div className='roadmapItemContent'>
 
@@ -85,45 +85,6 @@ export const ViewRoadmap = ({ }: ViewRoadmapProps) => {
 
                             <p>To facilitate the journey of the players, tourists from space stations will create missions to bring them to these new interesting places. You will have to travel many light years to reach your destination, encountering more content on the way.</p>
                         </div>
-                    </div>
-
-                    <div className='roadmapItem'>
-                        <h3>Trading missions</h3>
-
-                        <p className='roadmapEta'>Cosmos Journeyer 1.9 - August 2024</p>
-
-                        <div className='roadmapItemContent'>
-
-                            <Image className='roadmapImage' src={tradingImage} alt='space station' width={480} />
-
-                            <p>As space stations are designed from the ground up with agricultural production data, trading will emerge naturally. The price of goods at each station will depend on the local supply, which will be different at each station. This naturally creates trade roads between stations for players to earn money.</p>
-
-                            <p>In addition to this free form of trading, missions will be available at stations to guide players in their journey.</p>
-
-                        </div>
-                    </div>
-
-                    <div className='roadmapItem'>
-
-                        <h3>Ship interiors</h3>
-
-                        <p className='roadmapEta'>Cosmos Journeyer 2.0 - 2025</p>
-
-                        <div className='roadmapItemContent'>
-
-                            <Image className='roadmapImage' src={spaceShipImage} alt='space ship' width={480} />
-
-                            <p>Stepping for the first time on an alien world should be an impactful moment. Some would say an &ldquo;Armstrong moment&rdquo; in reference to the 1969 Moon landing.</p>
-                                
-                            <p> In order to recreate this incredible experience, I want players to be able to transition from commanding the spaceship to walking in a very smooth way, instead of using teleportation.
-                                Players will have to go through their ship airlock, and equalize the pressure before being able to step outside.
-                                When opening the airlock to the outside, the volume of sound would change depending on the current air pressure (no sound in space!).
-                            </p>
-
-                            <p>Ship interiors will also come first first person piloting of spaceships, giving a more immersive and enjoyable way of exploring the galaxy.</p>
-
-                        </div>
-
                     </div>
 
                     <div className='roadmapItem'>
@@ -143,9 +104,49 @@ export const ViewRoadmap = ({ }: ViewRoadmapProps) => {
 
                     <div className='roadmapItem'>
 
+                        <h3>Ship interiors</h3>
+
+                        <p className='roadmapEta'>Cosmos Journeyer 2.0 - 2026</p>
+
+                        <div className='roadmapItemContent'>
+
+                            <Image className='roadmapImage' src={spaceShipImage} alt='space ship' width={480} />
+
+                            <p>Stepping for the first time on an alien world should be an impactful moment. Some would say an &ldquo;Armstrong moment&rdquo; in reference to the 1969 Moon landing.</p>
+                                
+                            <p> In order to recreate this incredible experience, I want players to be able to transition from commanding the spaceship to walking in a very smooth way, instead of using teleportation.
+                                Players will have to go through their ship airlock, and equalize the pressure before being able to step outside.
+                                When opening the airlock to the outside, the volume of sound would change depending on the current air pressure (no sound in space!).
+                            </p>
+
+                            <p>Ship interiors will also come first first person piloting of spaceships, giving a more immersive and enjoyable way of exploring the galaxy.</p>
+
+                        </div>
+
+                    </div>
+
+                    <div className='roadmapItem'>
+                        <h3>Trading missions</h3>
+
+                        <p className='roadmapEta'>Beyond 2.0 - 2026</p>
+
+                        <div className='roadmapItemContent'>
+
+                            <Image className='roadmapImage' src={tradingImage} alt='space station' width={480} />
+
+                            <p>As space stations are designed from the ground up with agricultural production data, trading will emerge naturally. The price of goods at each station will depend on the local supply, which will be different at each station. This naturally creates trade roads between stations for players to earn money.</p>
+
+                            <p>In addition to this free form of trading, missions will be available at stations to guide players in their journey.</p>
+
+                        </div>
+                    </div>
+
+
+                    <div className='roadmapItem'>
+
                         <h3>Quest Generation</h3>
 
-                        <p className='roadmapEta'>Beyond 2.0 - 2025</p>
+                        <p className='roadmapEta'>Beyond 2.0 - 2026</p>
 
                         <div className='roadmapItemContent'>
 

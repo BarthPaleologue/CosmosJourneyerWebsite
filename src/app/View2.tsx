@@ -52,17 +52,20 @@ export const View2 = ({ }: View2Props) => {
                     <h2>FAQ:</h2>
 
                     <h3>What is Cosmos Journeyer?</h3>
-                    <p>Cosmos Journeyer is a free, open-source exploration driven game I started working on in 2021 in my free time.
-                        It is my labor of love, and will always be free for everyone to use and modify to their liking.</p>
+                    <p>Cosmos Journeyer is a free, open-source space exploration game The ultimate goal of the game is to make you travel to the most beautiful places of the universe, and make you reflect on our place in it.
+                        It is my labor of love, and it will always be free for everyone to use and modify to their liking.</p>
 
                     <h3>How to contribute?</h3>
-                    <p>Anyone can contribute to Cosmos Journeyer. If you know how to code, <a target="_blank" href="https://github.com/BarthPaleologue/CosmosJourneyer">the github repository</a> is where all the development takes place.</p>
 
-                    <p>You also can help the project grow by sponsoring my work on <a target="_blank" href="https://www.patreon.com/barthpaleologue">Patreon</a> and <a target="_blank" href="https://ko-fi.com/cosmosjourneyer">Ko-fi</a>.</p>
+                    <p>If you are a player, spread the word! Come and share your screenshots and discuss the game on <a target="_blank" href="https://www.reddit.com/r/CosmosJourneyer/">the official subreddit</a></p>
+
+                    <p>If you know how to code, come to <a target="_blank" href="https://github.com/BarthPaleologue/CosmosJourneyer">the github repository</a> is where all the development takes place.</p>
+
+                    <p>You also can help the project grow by sponsoring my work on <a target="_blank" href="https://www.patreon.com/barthpaleologue">Patreon</a> and <a target="_blank" href="https://github.com/sponsors/BarthPaleologue">GitHub</a>.</p>
 
                     <h3>Get in touch</h3>
 
-                    <p>If you have any questions, or just want to say hi, you can reach me by <a href="mailto:barth.paleologue@cosmosjourneyer.com">email</a></p>
+                    <p>If you have any questions, or just want to say hi, come to <a target="_blank" href="https://www.reddit.com/r/CosmosJourneyer/">the official subreddit</a> or reach me by <a href="mailto:barth.paleologue@cosmosjourneyer.com">email</a></p>
                 </div>
 
                 <footer>
