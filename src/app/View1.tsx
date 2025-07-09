@@ -33,6 +33,15 @@ export interface View1Props {
 export const View1 = ({ }: View1Props) => {
     return (
         <div className="fullView" id="view1">
+            <video 
+                autoPlay 
+                loop 
+                muted 
+                playsInline 
+                className="background-video"
+                src="/static/background_video.mp4"
+            >
+            </video>
             <div className="headerBackground">
                 <h1>Cosmos Journeyer</h1>
                 <h2>An entire universe on a web page</h2>

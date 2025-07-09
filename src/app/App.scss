@@ -51,8 +51,15 @@ body {
 .fullView {
 
   &#view1 {
-    background-image: url(/static/header4.webp);
-    background-position: right;
+    .background-video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
   }
 
   &#viewRoadmap {
@@ -90,7 +97,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.0) 25%, rgba(0, 0, 0, 1));
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 80%, rgb(0, 0, 0) 99%);
     z-index: 0;
     padding-bottom: 100px;
   }
