@@ -19,7 +19,7 @@
 
 
 import Image from 'next/image';
-import React from 'react';
+import React, { useRef } from 'react';
 
 import spaceStationImage from "../../public/static/spacestation.webp"
 import spaceShipImage from "../../public/static/spaceship.webp"
@@ -33,6 +33,26 @@ export interface ViewRoadmapProps {
 }
 
 export const ViewRoadmap = ({ }: ViewRoadmapProps) => {
+    const roadmapRef = useRef<HTMLDivElement>(null);
+
+    const scrollLeft = () => {
+        if (roadmapRef.current) {
+            roadmapRef.current.scrollBy({
+                left: -600,
+                behavior: 'smooth'
+            });
+        }
+    };
+
+    const scrollRight = () => {
+        if (roadmapRef.current) {
+            roadmapRef.current.scrollBy({
+                left: 600,
+                behavior: 'smooth'
+            });
+        }
+    };
+
     return (
         <div className="fullView" id="viewRoadmap">
             <div className="headerRoadmap">
@@ -46,7 +66,8 @@ export const ViewRoadmap = ({ }: ViewRoadmapProps) => {
 
                 <h2>Roadmap</h2>
 
-                <div id='roadmap'>
+                <div className="roadmapContainer">
+                    <div id='roadmap' ref={roadmapRef}>
 
                     <div className='roadmapItem'>
                         <h3>Space stations</h3>
@@ -161,6 +182,25 @@ export const ViewRoadmap = ({ }: ViewRoadmapProps) => {
 
                     </div>
 
+                    </div>
+                    
+                    <button 
+                        className="roadmapNavButton roadmapNavLeft" 
+                        onClick={scrollLeft}
+                        aria-label="Scroll roadmap left"
+                        type="button"
+                    >
+                        &#8249;
+                    </button>
+
+                    <button 
+                        className="roadmapNavButton roadmapNavRight" 
+                        onClick={scrollRight}
+                        aria-label="Scroll roadmap right"
+                        type="button"
+                    >
+                        &#8250;
+                    </button>
                 </div>
 
 
