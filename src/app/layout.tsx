@@ -15,27 +15,83 @@
 //  You should have received a copy of the GNU General Public License
 //  along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-import type { Metadata } from 'next'
-import Head from 'next/head'
+import type { Metadata } from "next";
+import { SITE_CONFIG } from "@/utils/constants";
 
 export const metadata: Metadata = {
-  title: 'Cosmos Journeyer',
-  description: 'Cosmos Journeyer is a free and open-source space exploration game that lets you discover the wonders of the universe.',
-  applicationName: 'Cosmos Journeyer',
-  robots: 'index,follow',
+    metadataBase: new URL(SITE_CONFIG.url),
+    title: {
+        default: SITE_CONFIG.name,
+        template: `%s | ${SITE_CONFIG.name}`,
+    },
+    description: SITE_CONFIG.description,
+    applicationName: SITE_CONFIG.name,
+    authors: [{ name: "Barthélemy Paléologue" }],
+    generator: "Next.js",
+    keywords: [
+        "space exploration",
+        "astronomy",
+        "universe",
+        "space game",
+        "open source",
+        "procedural",
+        "cosmos",
+        "galaxy",
+        "planets",
+        "space stations",
+    ],
+    robots: {
+        index: true,
+        follow: true,
+        googleBot: {
+            index: true,
+            follow: true,
+            "max-video-preview": -1,
+            "max-image-preview": "large",
+            "max-snippet": -1,
+        },
+    },
+    openGraph: {
+        type: "website",
+        locale: "en_US",
+        url: SITE_CONFIG.url,
+        title: SITE_CONFIG.name,
+        description: SITE_CONFIG.description,
+        siteName: SITE_CONFIG.name,
+        images: [
+            {
+                url: "/icon.png",
+                width: 1200,
+                height: 630,
+                alt: SITE_CONFIG.name,
+            },
+        ],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: SITE_CONFIG.name,
+        description: SITE_CONFIG.description,
+        images: ["/icon.png"],
+    },
+    icons: {
+        icon: "/favicon.ico",
+        shortcut: "/favicon.ico",
+        apple: "/icon.png",
+    },
+};
+
+interface RootLayoutProps {
+    children: React.ReactNode;
 }
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
-  return (
-    <html lang="en">
-      <Head>
-        <link rel="shortcut icon" href="/favicon.ico" />
-      </Head>
-      <body>{children}</body>
-    </html>
-  )
+export default function RootLayout({ children }: RootLayoutProps) {
+    return (
+        <html lang="en">
+            <head>
+                <meta name="theme-color" content="#000000" />
+                <meta name="viewport" content="width=device-width, initial-scale=1" />
+            </head>
+            <body>{children}</body>
+        </html>
+    );
 }

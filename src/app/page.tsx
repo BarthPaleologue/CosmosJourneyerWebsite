@@ -15,18 +15,18 @@
 //  You should have received a copy of the GNU General Public License
 //  along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-import './App.scss';
+import "@/styles/App.scss";
 
-import { View1 } from './View1'
-import { View2 } from './View2';
-import { ViewRoadmap } from './ViewRoadmap';
+import { View1 } from "./View1";
+import { View2 } from "./View2";
+import { ViewRoadmap } from "./ViewRoadmap";
 
 export default function Home() {
-  return (
-    <main className='App'>      
-      <View1 />
-      <ViewRoadmap />
-      <View2 />
-    </main>
-  )
+    return (
+        <main className="App">
+            <View1 />
+            <ViewRoadmap />
+            <View2 />
+        </main>
+    );
 }
