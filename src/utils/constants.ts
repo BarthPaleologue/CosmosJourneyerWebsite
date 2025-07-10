@@ -1,54 +1,54 @@
 import { SocialLink, RoadmapItem } from "@/types";
 
-// Images
-import spaceStationImage from "../../public/static/spacestation.webp";
-import spaceShipImage from "../../public/static/spaceship.webp";
-import terrainImage from "../../public/static/terrain.webp";
-import explorationImage from "../../public/static/exploration.webp";
-import tradingImage from "../../public/static/trading.webp";
-import llmsImage from "../../public/static/llms.webp";
+// Images - using public folder paths
+const spaceStationImage = "/static/spacestation.webp";
+const spaceShipImage = "/static/spaceship.webp";
+const terrainImage = "/static/terrain.webp";
+const explorationImage = "/static/exploration.webp";
+const tradingImage = "/static/trading.webp";
+const llmsImage = "/static/llms.webp";
 
-// Social icons
-import github from "../../public/static/icons/github.png";
-import youtube from "../../public/static/icons/youtube.png";
-import reddit from "../../public/static/icons/reddit.webp";
-import patreon from "../../public/static/icons/patreon.webp";
-import devlog from "../../public/static/icons/devlog.webp";
+// Social icons - using public folder paths
+const github = "/static/icons/github.png";
+const youtube = "/static/icons/youtube.png";
+const reddit = "/static/icons/reddit.webp";
+const patreon = "/static/icons/patreon.webp";
+const devlog = "/static/icons/devlog.webp";
 
 export const SOCIAL_LINKS = [
     {
         id: "patreon",
         name: "Patreon",
         url: "https://www.patreon.com/barthpaleologue",
-        icon: { src: patreon.src, alt: "patreon" },
+        icon: { src: patreon, alt: "patreon" },
         title: "Support the project on Patreon!",
     },
     {
         id: "devlog",
         name: "DevLog",
         url: "https://barthpaleologue.github.io/Blog/tags/cosmos-journeyer/",
-        icon: { src: devlog.src, alt: "devlog" },
+        icon: { src: devlog, alt: "devlog" },
         title: "Read the devlogs!",
     },
     {
         id: "youtube",
         name: "YouTube",
         url: "https://www.youtube.com/watch?v=5pXZqHRShTE",
-        icon: { src: youtube.src, alt: "youtube" },
+        icon: { src: youtube, alt: "youtube" },
         title: "Watch the trailer on Youtube!",
     },
     {
         id: "reddit",
         name: "Reddit",
         url: "https://reddit.com/r/CosmosJourneyer",
-        icon: { src: reddit.src, alt: "reddit" },
+        icon: { src: reddit, alt: "reddit" },
         title: "Join the community on Reddit!",
     },
     {
         id: "github",
         name: "GitHub",
         url: "https://github.com/BarthPaleologue/CosmosJourneyer",
-        icon: { src: github.src, alt: "github" },
+        icon: { src: github, alt: "github" },
         title: "Contribute on Github!",
     },
 ] as const satisfies SocialLink[];
@@ -61,7 +61,7 @@ export const ROADMAP_ITEMS = [
         description: "The first gameplay iteration of Cosmos Journeyer will heavily rely on space stations",
         content: {
             image: {
-                src: spaceStationImage.src,
+                src: spaceStationImage,
                 alt: "space station",
                 width: 480,
                 height: 270,
@@ -80,7 +80,7 @@ export const ROADMAP_ITEMS = [
         description: "Stemming from space stations, exploration content will debut in Cosmos Journeyer 1.9",
         content: {
             image: {
-                src: explorationImage.src,
+                src: explorationImage,
                 alt: "exploration",
                 width: 480,
                 height: 270,
@@ -109,7 +109,7 @@ export const ROADMAP_ITEMS = [
         description: "Taking advantage of WebGPU compute shaders, the terrain of planets will become more complex",
         content: {
             image: {
-                src: terrainImage.src,
+                src: terrainImage,
                 alt: "terrain",
                 width: 480,
                 height: 270,
@@ -126,7 +126,7 @@ export const ROADMAP_ITEMS = [
         description: "Stepping for the first time on an alien world should be an impactful moment",
         content: {
             image: {
-                src: spaceShipImage.src,
+                src: spaceShipImage,
                 alt: "spaceship",
                 width: 480,
                 height: 270,
@@ -146,7 +146,7 @@ export const ROADMAP_ITEMS = [
             "As space stations are designed from the ground up with agricultural production data, trading will emerge naturally",
         content: {
             image: {
-                src: tradingImage.src,
+                src: tradingImage,
                 alt: "trading",
                 width: 480,
                 height: 270,
@@ -165,7 +165,7 @@ export const ROADMAP_ITEMS = [
             "One of the hardest part of generating a procedural infinite universe, is to create engaging stories",
         content: {
             image: {
-                src: llmsImage.src,
+                src: llmsImage,
                 alt: "llms",
                 width: 480,
                 height: 270,
