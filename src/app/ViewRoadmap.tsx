@@ -31,10 +31,12 @@ export const ViewRoadmap: React.FC<ViewRoadmapProps> = ({ className = "" }) => {
     const roadmapRef = useRef<HTMLDivElement>(null);
     const { scrollToView } = useScrollTo();
 
+    const scrollOffset = 600;
+
     const scrollLeft = () => {
         if (roadmapRef.current) {
             roadmapRef.current.scrollBy({
-                left: -600,
+                left: -scrollOffset,
                 behavior: "smooth",
             });
         }
@@ -43,7 +45,7 @@ export const ViewRoadmap: React.FC<ViewRoadmapProps> = ({ className = "" }) => {
     const scrollRight = () => {
         if (roadmapRef.current) {
             roadmapRef.current.scrollBy({
-                left: 600,
+                left: scrollOffset,
                 behavior: "smooth",
             });
         }
