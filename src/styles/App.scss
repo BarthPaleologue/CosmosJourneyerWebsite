@@ -325,9 +325,9 @@ a:focus {
         display: flex;
         align-items: center;
         justify-content: center;
-        
+
         &::before {
-            content: '';
+            content: "";
             background-image: url(/static/icons/up.webp);
             background-size: cover;
             width: 50px;
@@ -337,7 +337,7 @@ a:focus {
 
     .topArrow {
         top: 30px;
-        
+
         &::before {
             animation: bounce2 2s infinite ease-in-out;
             animation-delay: 1s;
@@ -346,7 +346,7 @@ a:focus {
 
     .downArrow {
         bottom: 30px;
-        
+
         &::before {
             rotate: 180deg;
             animation: bounce 2s infinite ease-in-out;
