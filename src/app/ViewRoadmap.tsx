@@ -57,7 +57,7 @@ export const ViewRoadmap: React.FC<ViewRoadmapProps> = ({ className = "" }) => {
             cardElement.scrollIntoView({
                 behavior: "smooth",
                 block: "nearest",
-                inline: "center",
+                inline: "center", 
             });
         }
     };
