@@ -51,6 +51,17 @@ export const ViewRoadmap: React.FC<ViewRoadmapProps> = ({ className = "" }) => {
         }
     };
 
+    const handleCardClick = (itemId: string) => {
+        const cardElement = document.getElementById(`roadmap-item-${itemId}`);
+        if (cardElement && roadmapRef.current) {
+            cardElement.scrollIntoView({
+                behavior: "smooth",
+                block: "nearest",
+                inline: "center", 
+            });
+        }
+    };
+
     return (
         <div className={`fullView ${className}`} id="viewRoadmap">
             <div className="headerRoadmap">
@@ -61,7 +72,14 @@ export const ViewRoadmap: React.FC<ViewRoadmapProps> = ({ className = "" }) => {
                 <div className="roadmapContainer">
                     <div id="roadmap" ref={roadmapRef}>
                         {ROADMAP_ITEMS.map((item) => (
-                            <RoadmapItemComponent key={item.id} item={item} />
+                            <div
+                                key={item.id}
+                                id={`roadmap-item-${item.id}`}
+                                onClick={() => handleCardClick(item.id)}
+                                style={{ cursor: "pointer" }}
+                            >
+                                <RoadmapItemComponent item={item} />
+                            </div>
                         ))}
                     </div>
 
