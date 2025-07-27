@@ -14,25 +14,19 @@
 //
 //  You should have received a copy of the GNU General Public License
 //  along with this program.  If not, see <https://www.gnu.org/licenses/>.
-
 "use client";
-
 import React, { useRef } from "react";
 import { RoadmapItemComponent } from "@/components/RoadmapItem";
 import { ScrollArrow } from "@/components/ScrollArrow";
 import { useScrollTo } from "@/hooks/useScrollTo";
 import { ROADMAP_ITEMS } from "@/utils/constants";
-
 export interface ViewRoadmapProps {
     className?: string;
 }
-
 export const ViewRoadmap: React.FC<ViewRoadmapProps> = ({ className = "" }) => {
     const roadmapRef = useRef<HTMLDivElement>(null);
     const { scrollToView } = useScrollTo();
-
     const scrollOffset = 600;
-
     const scrollLeft = () => {
         if (roadmapRef.current) {
             roadmapRef.current.scrollBy({
@@ -41,7 +35,6 @@ export const ViewRoadmap: React.FC<ViewRoadmapProps> = ({ className = "" }) => {
             });
         }
     };
-
     const scrollRight = () => {
         if (roadmapRef.current) {
             roadmapRef.current.scrollBy({
@@ -54,11 +47,13 @@ export const ViewRoadmap: React.FC<ViewRoadmapProps> = ({ className = "" }) => {
     const handleCardClick = (itemId: string) => {
         const cardElement = document.getElementById(`roadmap-item-${itemId}`);
         if (cardElement && roadmapRef.current) {
-            cardElement.scrollIntoView({
-                behavior: "smooth",
-                block: "nearest",
-                inline: "center", 
-            });
+            const containerRect = roadmapRef.current.getBoundingClientRect();
+            const cardRect = cardElement.getBoundingClientRect();
+            if (cardRect.left < containerRect.left) {
+                scrollLeft();
+            } else if (cardRect.right > containerRect.right) {
+                scrollRight();
+            }
         }
     };
 
@@ -66,32 +61,27 @@ export const ViewRoadmap: React.FC<ViewRoadmapProps> = ({ className = "" }) => {
         <div className={`fullView ${className}`} id="viewRoadmap">
             <div className="headerRoadmap">
                 <ScrollArrow direction="up" onClick={() => scrollToView(0)} ariaLabel="Scroll to top" />
-
                 <h2>Roadmap</h2>
-
                 <div className="roadmapContainer">
                     <div id="roadmap" ref={roadmapRef}>
                         {ROADMAP_ITEMS.map((item) => (
-                            <div
-                                key={item.id}
+                            <RoadmapItemComponent 
+                                key={item.id} 
+                                item={item} 
                                 id={`roadmap-item-${item.id}`}
                                 onClick={() => handleCardClick(item.id)}
                                 style={{ cursor: "pointer" }}
-                            >
-                                <RoadmapItemComponent item={item} />
-                            </div>
+                            />
                         ))}
                     </div>
-
                     <button
                         className="roadmapNavButton roadmapNavLeft"
-                        onClick={scrollLeft}
+                        onClick={scrollLeft}    
                         aria-label="Scroll roadmap left"
                         type="button"
                     >
                         &#8249;
                     </button>
-
                     <button
                         className="roadmapNavButton roadmapNavRight"
                         onClick={scrollRight}
@@ -101,7 +91,6 @@ export const ViewRoadmap: React.FC<ViewRoadmapProps> = ({ className = "" }) => {
                         &#8250;
                     </button>
                 </div>
-
                 <ScrollArrow direction="down" onClick={() => scrollToView(2)} ariaLabel="Scroll to next section" />
             </div>
         </div>
