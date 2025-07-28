@@ -65,9 +65,9 @@ export const ViewRoadmap: React.FC<ViewRoadmapProps> = ({ className = "" }) => {
                 <div className="roadmapContainer">
                     <div id="roadmap" ref={roadmapRef}>
                         {ROADMAP_ITEMS.map((item) => (
-                            <RoadmapItemComponent 
-                                key={item.id} 
-                                item={item} 
+                            <RoadmapItemComponent
+                                key={item.id}
+                                item={item}
                                 id={`roadmap-item-${item.id}`}
                                 onClick={() => handleCardClick(item.id)}
                                 style={{ cursor: "pointer" }}
@@ -76,7 +76,7 @@ export const ViewRoadmap: React.FC<ViewRoadmapProps> = ({ className = "" }) => {
                     </div>
                     <button
                         className="roadmapNavButton roadmapNavLeft"
-                        onClick={scrollLeft}    
+                        onClick={scrollLeft}
                         aria-label="Scroll roadmap left"
                         type="button"
                     >
