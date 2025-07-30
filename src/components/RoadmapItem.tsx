@@ -2,13 +2,13 @@ import React from "react";
 import Image from "next/image";
 import { RoadmapItem } from "@/types";
 
-interface RoadmapItemComponentProps {
+interface RoadmapItemComponentProps extends React.HTMLAttributes<HTMLDivElement> {
     item: RoadmapItem;
 }
 
-export const RoadmapItemComponent: React.FC<RoadmapItemComponentProps> = ({ item }) => {
+export const RoadmapItemComponent: React.FC<RoadmapItemComponentProps> = ({ item, ...rest }) => {
     return (
-        <div className="roadmapItem">
+        <div className="roadmapItem" {...rest}>
             <h3>{item.title}</h3>
             <p className="roadmapEta">{item.eta}</p>
 
