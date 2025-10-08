@@ -2,6 +2,8 @@
 
 Official website for Cosmos Journeyer, a free and open-source space exploration game.
 
+> **Warning:** This codebase has moved to the [Cosmos Journeyer monorepo](https://github.com/BarthPaleologue/CosmosJourneyer) (under `packages/website`) and is no longer updated here.
+
 If you are looking for the game itself, please visit this [GitHub Repository](https://github.com/BarthPaleologue/CosmosJourneyer)
 
 ![A view of the website](cover.png)
